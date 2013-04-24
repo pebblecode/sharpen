@@ -96,8 +96,6 @@
 
 
   // Facebook
-  FB.init({appId: '132246976967994', xfbml: true, cookie: true});
-
   $(".send-test").click(function(event) {
     event.preventDefault();
 
