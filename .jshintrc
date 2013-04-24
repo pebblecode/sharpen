@@ -22,7 +22,7 @@
   "strict": true,
   "trailing": true,
   "smarttabs": true,
-  "white": true,
+  "white": false,
   "globals": {
     "_": true,
     "$": true,
