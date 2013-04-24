@@ -117,7 +117,7 @@
       FB.ui({
         method: 'send',
         name: testName + ' test',
-        link: 'http://sharpen.apphb.com/answer.html?id=' + elemId
+        link: 'http://sharpen.apphb.com/answer/' + elemId
       },
       function(response) {
         console.log(response);
