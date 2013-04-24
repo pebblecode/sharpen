@@ -98,11 +98,20 @@
   // Facebook
   FB.init({appId: '132246976967994', xfbml: true, cookie: true});
 
-  $(".send-test").click(function() {
+  $(".send-test").click(function(event) {
+    event.preventDefault();
+
     FB.ui({
       method: 'send',
       name: 'Test to send',
       link: 'http://sharpen.apphb.com/'
+    },
+    function(response) {
+      if (response && response.post_id) {
+        console.log('Post was published.');
+      } else {
+        console.log('Post was not published.');
+      }
     });
   });
 
