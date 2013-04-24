@@ -1,6 +1,12 @@
-# .net MVC bootstrap
+# Sharpen
 
-## Web support
+Sharpen your skills.
+
+A hackday project for [HackEd 2.0](http://www.amiando.com/hacked-london.html?page=942710).
+
+## Development
+
+### Web
 
 Support for plain html/css/js.
 
