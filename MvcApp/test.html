@@ -62,7 +62,7 @@
                   <label class="control-label" for="questions[0][question]">Question</label>
 
                   <div class="controls">
-                    <input name="questions[0][question]" type="text" placeholder="Question">
+                    <input id="questions-0-question" name="questions[0][question]" type="text" placeholder="Question">
                   </div>
                 </div>
 
@@ -70,7 +70,7 @@
                   <label class="control-label" for="questions[0][markingCriteria]">Marking criteria</label>
 
                   <div class="controls">
-                    <textarea rows="5" name="questions[0][markingCriteria]"placeholder="Marking criteria"></textarea>
+                    <textarea rows="5" id="questions-0-markingCriteria" name="questions[0][markingCriteria]"placeholder="Marking criteria"></textarea>
                   </div>
                 </div>
 
@@ -78,7 +78,7 @@
                   <label class="control-label" for="questions[0][points]">Points</label>
 
                   <div class="controls">
-                    <input name="questions[0][points]" type="text" placeholder="Points eg, 3">
+                    <input id="questions-0-points" name="questions[0][points]" type="text" placeholder="Points eg, 3">
                   </div>
                 </div>
 
@@ -92,6 +92,8 @@
               <div class="form-actions">
                 <button id="submit" type="submit" class="btn btn-primary">Save changes</button>
                 <button type="button" class="btn">Cancel</button>
+
+                <button id="sample-data" type="button" class="btn">Sample</button>
               </div>
             </fieldset>
           </form>

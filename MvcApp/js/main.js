@@ -85,4 +85,13 @@
 
   });
 
+  var sampleData = $("#sample-data");
+
+  sampleData.click(function(event) {
+    testForm.find("input[name=name]").val("Science revision");
+    $("#questions-0-question").val("Why does ice float");
+    $("#questions-0-markingCriteria").val("1 point: Talks about density?\n1 point: Gives an example");
+    $("#questions-0-points").val("2");
+  });
+
 })();
