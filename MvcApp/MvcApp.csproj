@@ -127,11 +127,14 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\AnswerController.cs" />
     <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="JsonpMediaTypeFormatter.cs" />
+    <Compile Include="Models\AnswersDto.cs" />
+    <Compile Include="Models\AnswerDto.cs" />
     <Compile Include="Models\QuestionDto.cs" />
     <Compile Include="Models\TestDto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
