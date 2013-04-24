@@ -53,25 +53,19 @@
     <div class="container">
         <form class="form-horizontal">
             <fieldset>
-                <legend>Science revision</legend>
-                <div class="control-group">
-                    <label class="control-label" for="question1">Why does ice float?</label>
-                    <div class="controls">
-                        <textarea id="question1" class="input-block-level" rows="4"></textarea>
+                <legend>@Model.TestName</legend>
+                @{ var answers = Model.Answers.ToArray(); }
+                @for (int i = 0; i < answers.Length; i++)
+                {
+                    var answer = answers[i];
+                    var elementId = string.Format("question{0}", i);
+                    <div class="control-group">
+                        <label class="control-label" for="@elementId">@answer.Question</label>
+                        <div class="controls">
+                            <textarea id="@elementId" class="input-block-level" rows="4"></textarea>
+                        </div>
                     </div>
-                </div>
-                <div class="control-group">
-                    <label class="control-label" for="question2">What causes a rainbow?</label>
-                    <div class="controls">
-                        <textarea id="question2" class="input-block-level" rows="4"></textarea>
-                    </div>
-                </div>
-                <div class="control-group">
-                    <label class="control-label" for="question2">What is it called when a solid changes directly into a gas?</label>
-                    <div class="controls">
-                        <textarea id="question3" class="input-block-level" rows="4"></textarea>
-                    </div>
-                </div>
+                }
                 <div class="control-group">
                     <div class="controls">
                         <a href="mark.html" class="btn">Finish Test</a>

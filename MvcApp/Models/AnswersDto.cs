@@ -22,6 +22,11 @@ namespace MvcApp.Models
 
         [Required]
         [DataMember(IsRequired = true)]
+        [JsonProperty(PropertyName = "name")]
+        public string TestName { get; set; }
+
+        [Required]
+        [DataMember(IsRequired = true)]
         [JsonProperty(PropertyName = "userId")]
         public string UserId { get; set; }
 
