@@ -145,6 +145,7 @@
     <Content Include="answered.html" />
     <Content Include="css\bootstrap-responsive.css" />
     <Content Include="css\bootstrap-responsive.min.css" />
+    <Content Include="css\bootstrap-wizard.css" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\font-awesome-ie7.min.css" />
@@ -155,6 +156,8 @@
     <Content Include="font\fontawesome-webfont.svg" />
     <Content Include="Global.asax" />
     <Content Include="index.html" />
+    <Content Include="js\vendor\bootstrap-wizard.js" />
+    <Content Include="js\vendor\bootstrap-wizard.min.js" />
     <Content Include="sass\main.scss" />
     <Content Include="img\glyphicons-halflings-white.png" />
     <Content Include="img\glyphicons-halflings.png" />
