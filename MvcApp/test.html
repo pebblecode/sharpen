@@ -45,7 +45,7 @@
     <div class="container">
       <div class="row">
         <div class="span4">
-          <form class="form-horizontal" action="/api/test" method="post">
+          <form id="test-form" class="form-horizontal" action="/api/test" method="post">
             <fieldset>
               <legend>Create test</legend>
               <div class="control-group">
@@ -59,26 +59,26 @@
                 <legend>Questions</legend>
 
                 <div class="control-group">
-                  <label class="control-label" for="name">Name</label>
+                  <label class="control-label" for="questions[0][question]">Question</label>
 
                   <div class="controls">
-                    <input name="question" type="text" placeholder="Question">
+                    <input name="questions[0][question]" type="text" placeholder="Question">
                   </div>
                 </div>
 
                 <div class="control-group">
-                  <label class="control-label" for="markingCriteria">Marking criteria</label>
+                  <label class="control-label" for="questions[0][markingCriteria]">Marking criteria</label>
 
                   <div class="controls">
-                    <textarea rows="5" name="markingCriteria"placeholder="Marking criteria"></textarea>
+                    <textarea rows="5" name="questions[0][markingCriteria]"placeholder="Marking criteria"></textarea>
                   </div>
                 </div>
 
                 <div class="control-group">
-                  <label class="control-label" for="points">Points</label>
+                  <label class="control-label" for="questions[0][points]">Points</label>
 
                   <div class="controls">
-                    <input name="points" type="text" placeholder="Points eg, 3">
+                    <input name="questions[0][points]" type="text" placeholder="Points eg, 3">
                   </div>
                 </div>
 
@@ -90,7 +90,7 @@
 
 
               <div class="form-actions">
-                <button type="submit" class="btn btn-primary">Save changes</button>
+                <button id="submit" type="submit" class="btn btn-primary">Save changes</button>
                 <button type="button" class="btn">Cancel</button>
               </div>
             </fieldset>
