@@ -1,4 +1,4 @@
-/*global $:true, console:true, FB:true*/
+/*global $:true, console:true, FB:true, window:true*/
 (function() {
   'use strict';
 
@@ -87,7 +87,7 @@
 
   var sampleData = $("#sample-data");
 
-  sampleData.click(function(event) {
+  sampleData.click(function() {
     testForm.find("input[name=name]").val("Science revision");
     $("#questions-0-question").val("Why does ice float");
     $("#questions-0-markingCriteria").val("1 point: Talks about density?\n1 point: Gives an example");
@@ -146,6 +146,6 @@
         fbLogin();
       }
     });
-  }
+  };
 
 })();
