@@ -15,7 +15,7 @@
   "eqnull": true,
   "newcap": true,
   "noarg": true,
-  "quotmark": "single",
+  "quotmark": "both",
   "regexp": true,
   "undef": true,
   "unused": true,
