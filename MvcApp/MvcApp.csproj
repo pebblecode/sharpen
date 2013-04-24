@@ -142,12 +142,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="answer.html" />
+    <Content Include="answered.html" />
     <Content Include="css\bootstrap-responsive.css" />
     <Content Include="css\bootstrap-responsive.min.css" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\font-awesome-ie7.min.css" />
+    <Content Include="css\font-awesome.css" />
+    <Content Include="css\font-awesome.min.css" />
     <Content Include="css\main.css" />
     <Content Include="favicon.ico" />
+    <Content Include="font\fontawesome-webfont.svg" />
     <Content Include="Global.asax" />
     <Content Include="index.html" />
     <Content Include="sass\main.scss" />
@@ -173,6 +178,20 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="font\fontawesome-webfont.eot" />
+    <Content Include="font\fontawesome-webfont.ttf" />
+    <Content Include="font\fontawesome-webfont.woff" />
+    <Content Include="font\FontAwesome.otf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="less\font-awesome-ie7.less" />
+    <Content Include="less\font-awesome.less" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="sass\font-awesome.sass" />
+    <Content Include="sass\font-awesome.scss" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
