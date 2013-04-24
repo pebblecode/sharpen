@@ -105,6 +105,7 @@
       link: 'http://sharpen.apphb.com/'
     },
     function(response) {
+      console.log(response);
       if (response && response.post_id) {
         console.log('Post was published.');
       } else {
