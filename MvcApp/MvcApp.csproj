@@ -142,7 +142,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="answer.html" />
-    <Content Include="answered.html" />
+    <Content Include="mark.html" />
     <Content Include="css\bootstrap-responsive.css" />
     <Content Include="css\bootstrap-responsive.min.css" />
     <Content Include="css\bootstrap-wizard.css" />
