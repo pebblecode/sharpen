@@ -89,7 +89,14 @@
     event.preventDefault();
     submitTest();
   });
-
+    
+  $('input', testForm).keypress(function (e) {
+      if (e.which == 13) {
+          submitTest();
+          return false;
+      }
+  });
+    
   var sampleData = $("#sample-data");
 
   sampleData.click(function() {
