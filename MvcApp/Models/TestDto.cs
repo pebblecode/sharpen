@@ -9,6 +9,7 @@ namespace MvcApp.Models
     [DataContract]
     public class TestDto
     {
+        [DataMember]
         [JsonProperty(PropertyName = "id")]
         public Guid Id { get; set; }
 

@@ -12,6 +12,12 @@ namespace MvcApp
                 url: "Test/{action}/{id}",
                 defaults: new { controller = "Test", action = "Index", id = UrlParameter.Optional }
             );
+
+            routes.MapRoute(
+                name: "Answer",
+                url: "Answer/{id}",
+                defaults: new { controller = "Answer", action = "Get", id = UrlParameter.Optional }
+            );
         }
     }
 }
