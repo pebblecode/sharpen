@@ -63,12 +63,16 @@
                 {
                     <tr>
                         <td>
-                            <a href="#" class="send-test" data-id="@test.Id">@test.Name</a>
+                            @test.Name
+                        </td>
+                        <td>
+                            <a href="#" class="btn btn-primary send-test" data-id="@test.Id"><i class="icon-share icon-white" data-id="123">Send</a>
                         </td>
                     </tr>
                 }
             </tbody>
         </table>
+
         <div class="pagination">
             <ul>
                 <li><a href="#">Prev</a></li>
@@ -104,7 +108,7 @@
             });
 
             // Additional initialization code such as adding Event Listeners goes here
-            fbInit();
+            fbInitfbInit();
         };
 
         // Load the SDK asynchronously
