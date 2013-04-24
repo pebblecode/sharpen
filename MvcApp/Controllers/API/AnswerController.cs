@@ -8,7 +8,7 @@ namespace MvcApp.Controllers.API
 {
     public class AnswerController : ApiController
     {
-        private static readonly ConcurrentDictionary<Guid, AnswersDto> Answers = new ConcurrentDictionary<Guid, AnswersDto>();
+        public static readonly ConcurrentDictionary<Guid, AnswersDto> Answers = new ConcurrentDictionary<Guid, AnswersDto>();
 
         // GET api/answer/5
         public AnswersDto Get(Guid id)

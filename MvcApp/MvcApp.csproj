@@ -131,6 +131,7 @@
     <Compile Include="Controllers\AnswerController.cs" />
     <Compile Include="Controllers\API\AnswerController.cs" />
     <Compile Include="Controllers\API\TestController.cs" />
+    <Compile Include="Controllers\MarkController.cs" />
     <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -207,6 +208,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Answer\Get.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Mark\NextTest.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
