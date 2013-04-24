@@ -130,6 +130,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\API\AnswerController.cs" />
     <Compile Include="Controllers\API\TestController.cs" />
+    <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -195,6 +196,12 @@
   <ItemGroup>
     <Content Include="sass\font-awesome.sass" />
     <Content Include="sass\font-awesome.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Test\Send.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Web.config" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
