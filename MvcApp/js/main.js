@@ -99,12 +99,13 @@
   $(".send-test").click(function(event) {
     event.preventDefault();
     var elem = event.target,
-        elemId = $(elem).data("id");
+        elemId = $(elem).data("id"),
+        testName = $(elem).text();
 
 
     FB.ui({
       method: 'send',
-      name: 'Find your test here',
+      name: testName + ' test',
       link: 'http://sharpen.apphb.com/answer.html?id=' + elemId
     },
     function(response) {
