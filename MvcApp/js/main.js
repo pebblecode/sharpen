@@ -1,4 +1,4 @@
-/*global $:true, console:true*/
+/*global $:true, console:true, FB:true*/
 (function() {
   'use strict';
 
@@ -92,6 +92,18 @@
     $("#questions-0-question").val("Why does ice float");
     $("#questions-0-markingCriteria").val("1 point: Talks about density?\n1 point: Gives an example");
     $("#questions-0-points").val("2");
+  });
+
+
+  // Facebook
+  FB.init({appId: '132246976967994', xfbml: true, cookie: true});
+
+  $(".send-test").click(function() {
+    FB.ui({
+      method: 'send',
+      name: 'Test to send',
+      link: 'http://sharpen.apphb.com/'
+    });
   });
 
 })();
