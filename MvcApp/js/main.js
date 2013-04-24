@@ -77,7 +77,7 @@
       type: 'POST',
       url: '/api/test',
       dataType: 'json',
-      data: JSON.stringify(testForm.serializeObject()),
+      data: testForm.serializeObject(),
       success: function(data) {
         console.log(data);
       }
