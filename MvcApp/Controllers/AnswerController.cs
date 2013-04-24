@@ -21,6 +21,7 @@ namespace MvcApp.Controllers
             var answers = new AnswersDto
                 {
                     TestId = test.Id,
+                    TestName = test.Name,
                     Answers =
                         test.Questions.Select(
                             q =>
