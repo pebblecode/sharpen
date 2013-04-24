@@ -96,26 +96,58 @@
 
 
   // Facebook
-  $(".send-test").click(function(event) {
-    event.preventDefault();
-    var elem = event.target,
-        elemId = $(elem).data("id"),
-        testName = $(elem).text();
-
-
-    FB.ui({
-      method: 'send',
-      name: testName + ' test',
-      link: 'http://sharpen.apphb.com/answer.html?id=' + elemId
-    },
-    function(response) {
-      console.log(response);
-      if (response && response.success === true) {
-        console.log('Post was published.');
+  function fbLogin() {
+    FB.login(function(response) {
+      if (response.authResponse) {
+        console.log("Logged in");
       } else {
-        console.log('Post was not published.');
+        console.log("Cancelled log in");
       }
     });
+  }
+
+  function initSendTest() {
+    $(".send-test").click(function(event) {
+      event.preventDefault();
+      var elem = event.target,
+          elemId = $(elem).data("id"),
+          testName = $(elem).text();
+
+
+      FB.ui({
+        method: 'send',
+        name: testName + ' test',
+        link: 'http://sharpen.apphb.com/answer.html?id=' + elemId
+      },
+      function(response) {
+        console.log(response);
+        if (response && response.success === true) {
+          console.log('Post was published.');
+        } else {
+          console.log('Post was not published.');
+        }
+      });
+    });
+  }
+
+  function init() {
+
+    FB.getLoginStatus(function(response) {
+      if (response.status === 'connected') {
+        console.log("connected");
+        initSendTest();
+      } else if (response.status === 'not_authorized') {
+        console.log("not authorized");
+        fbLogin();
+      } else {
+        console.log("not logged in");
+        fbLogin();
+      }
+    });
+  }
+
+  $(document).ready(function(){
+    init();
   });
 
 })();
