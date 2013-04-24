@@ -1,52 +1,17 @@
-﻿using System;
-using System.Collections.Concurrent;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Web.Http;
-using MvcApp.Models;
+﻿using System.Web.Mvc;
 
 namespace MvcApp.Controllers
 {
-    public class TestController : ApiController
+    public class TestController : Controller
     {
-        private static readonly ConcurrentDictionary<Guid, TestDto> Tests = new ConcurrentDictionary<Guid, TestDto>();
+        private readonly API.TestController api = new API.TestController();
+        //
+        // GET: /Test/
 
-        // GET api/test
-        public IEnumerable<TestDto> Get()
+        public ActionResult Send()
         {
-            return Tests.Values;
+            return View(api.Get());
         }
 
-        // GET api/test/5
-        public TestDto Get(Guid id)
-        {
-            TestDto test;
-            if (Tests.TryGetValue(id, out test))
-            {
-                return test;
-            }
-
-            throw new HttpResponseException(HttpStatusCode.NotFound);
-        }
-
-        // POST api/test
-        public TestDto Post(TestDto test)
-        {
-            if (!ModelState.IsValid)
-            {
-                throw new HttpResponseException(HttpStatusCode.BadRequest);
-            }
-
-            var id = Guid.NewGuid();
-            test.Id = id;
-            if (!Tests.TryAdd(id, test))
-            {
-                throw new HttpResponseException(HttpStatusCode.Conflict);
-            }
-
-            return test;
-        }
     }
 }

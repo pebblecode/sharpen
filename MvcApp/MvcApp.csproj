@@ -128,7 +128,8 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\AnswerController.cs" />
+    <Compile Include="Controllers\API\AnswerController.cs" />
+    <Compile Include="Controllers\API\TestController.cs" />
     <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -142,9 +143,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="answer.html" />
-    <Content Include="answered.html" />
+    <Content Include="mark.html" />
     <Content Include="css\bootstrap-responsive.css" />
     <Content Include="css\bootstrap-responsive.min.css" />
+    <Content Include="css\bootstrap-wizard.css" />
     <Content Include="css\bootstrap.css" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\font-awesome-ie7.min.css" />
@@ -155,6 +157,8 @@
     <Content Include="font\fontawesome-webfont.svg" />
     <Content Include="Global.asax" />
     <Content Include="index.html" />
+    <Content Include="js\vendor\bootstrap-wizard.js" />
+    <Content Include="js\vendor\bootstrap-wizard.min.js" />
     <Content Include="sass\main.scss" />
     <Content Include="img\glyphicons-halflings-white.png" />
     <Content Include="img\glyphicons-halflings.png" />
@@ -192,6 +196,12 @@
   <ItemGroup>
     <Content Include="sass\font-awesome.sass" />
     <Content Include="sass\font-awesome.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Test\Send.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Web.config" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
