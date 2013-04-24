@@ -106,7 +106,7 @@
     },
     function(response) {
       console.log(response);
-      if (response && response.post_id) {
+      if (response && response.success === "true") {
         console.log('Post was published.');
       } else {
         console.log('Post was not published.');
