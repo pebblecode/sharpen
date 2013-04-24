@@ -11,6 +11,7 @@ namespace MvcApp.Models
     [DataContract]
     public class AnswersDto
     {
+        [DataMember]
         [JsonProperty(PropertyName = "id")]
         public Guid Id { get; set; }
 
