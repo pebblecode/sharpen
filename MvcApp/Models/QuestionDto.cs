@@ -15,6 +15,7 @@ namespace MvcApp.Models
 
         [Required]
         [Range(0, 999)]
+        [JsonProperty(PropertyName = "points")]
         public int Points { get; set; }
     }
 }
