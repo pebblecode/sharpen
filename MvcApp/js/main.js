@@ -77,7 +77,7 @@
         console.log(data);
 
         // Redirect to send page
-        window.location.replace("/send.html");
+        window.location.replace("/test/send");
       }
     });
   }
