@@ -137,7 +137,7 @@
 
   // Initialisation code
   // Called after facebook is initialised
-  window.init = function init() {
+  window.fbInit = function fbInit() {
 
     FB.getLoginStatus(function(response) {
       if (response.status === 'connected') {
