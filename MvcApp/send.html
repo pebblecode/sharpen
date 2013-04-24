@@ -89,6 +89,7 @@
     <script src="js/vendor/bootstrap.min.js"></script>
 
     <div id="fb-root"></div>
+    <script src="js/main.js"></script>
     <script>
       window.fbAsyncInit = function() {
         // init the FB JS SDK
@@ -100,6 +101,7 @@
         });
 
         // Additional initialization code such as adding Event Listeners goes here
+        init();
       };
 
       // Load the SDK asynchronously
@@ -111,7 +113,5 @@
          fjs.parentNode.insertBefore(js, fjs);
        }(document, 'script', 'facebook-jssdk'));
     </script>
-
-    <script src="js/main.js"></script>
 </body>
 </html>

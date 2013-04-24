@@ -130,7 +130,9 @@
     });
   }
 
-  function init() {
+  // Initialisation code
+  // Called after facebook is initialised
+  window.init = function init() {
 
     FB.getLoginStatus(function(response) {
       if (response.status === 'connected') {
@@ -145,9 +147,5 @@
       }
     });
   }
-
-  $(document).ready(function(){
-    init();
-  });
 
 })();
