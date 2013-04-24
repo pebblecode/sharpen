@@ -3,11 +3,15 @@ using Newtonsoft.Json;
 
 namespace MvcApp.Models
 {
-    public class QuestionDto
+    public class AnswerDto
     {
         [Required]
         [JsonProperty(PropertyName = "question")]
         public string Question { get; set; }
+
+        [Required]
+        [JsonProperty(PropertyName = "answer")]
+        public string Answer { get; set; }
 
         [Required]
         [JsonProperty(PropertyName = "markingCriteria")]
