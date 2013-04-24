@@ -67,12 +67,7 @@
       return json;
   };
 
-
-  var testForm = $("#test-form");
-
-  testForm.find("#submit").click(function(event) {
-    event.preventDefault();
-
+  function submitTest() {
     $.ajax({
       type: 'POST',
       url: '/api/test',
@@ -80,9 +75,19 @@
       data: testForm.serializeObject(),
       success: function(data) {
         console.log(data);
+
+        // Redirect to send page
+        window.location.replace("/send.html");
       }
     });
+  }
 
+
+  var testForm = $("#test-form");
+
+  testForm.find("#submit").click(function(event) {
+    event.preventDefault();
+    submitTest();
   });
 
   var sampleData = $("#sample-data");
