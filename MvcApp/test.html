@@ -45,7 +45,56 @@
     <div class="container">
       <div class="row">
         <div class="span4">
-          <h2>Create test</h2>
+          <form class="form-horizontal" action="/test" method="post">
+            <fieldset>
+              <legend>Create test</legend>
+              <div class="control-group">
+                <label class="control-label" for="name">Name</label>
+                <div class="controls">
+                  <input id="name" name="name" type="text" placeholder="Test name">
+                </div>
+              </div>
+
+              <fieldset>
+                <legend>Questions</legend>
+
+                <div class="control-group">
+                  <label class="control-label" for="name">Name</label>
+
+                  <div class="controls">
+                    <input name="question" type="text" placeholder="Question">
+                  </div>
+                </div>
+
+                <div class="control-group">
+                  <label class="control-label" for="markingCriteria">Marking criteria</label>
+
+                  <div class="controls">
+                    <textarea rows="5" name="markingCriteria"placeholder="Marking criteria"></textarea>
+                  </div>
+                </div>
+
+                <div class="control-group">
+                  <label class="control-label" for="points">Points</label>
+
+                  <div class="controls">
+                    <input name="points" type="text" placeholder="Points eg, 3">
+                  </div>
+                </div>
+
+                <div class="controls">
+                  <button type="submit" class="btn"><i class="icon-plus"></i> Another question</button>
+                </div>
+
+              </fieldset>
+
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn">Cancel</button>
+              </div>
+            </fieldset>
+          </form>
 
         </div>
       </div>
